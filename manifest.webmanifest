@@ -1,0 +1,68 @@
+{
+  "name": "众需生活",
+  "short_name": "众需生活",
+  "description": "AI 生活创作、互动娱乐与供需协作平台",
+  "lang": "zh-CN",
+  "start_url": "./众需生活-可交互演示.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f7f2e9",
+  "theme_color": "#1e2d32",
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "拍照或录像",
+      "short_name": "拍摄",
+      "url": "./众需生活-可交互演示.html#camera"
+    },
+    {
+      "name": "找项目",
+      "short_name": "找项目",
+      "url": "./众需生活-可交互演示.html#market"
+    },
+    {
+      "name": "K歌",
+      "short_name": "K歌",
+      "url": "./众需生活-可交互演示.html#ktv"
+    },
+    {
+      "name": "全站搜索",
+      "short_name": "搜索",
+      "url": "./众需生活-可交互演示.html#search"
+    },
+    {
+      "name": "AI客服",
+      "short_name": "AI客服",
+      "url": "./众需生活-可交互演示.html#assistant"
+    },
+    {
+      "name": "我的钱包",
+      "short_name": "钱包",
+      "url": "./众需生活-可交互演示.html#wallet"
+    },
+    {
+      "name": "开始直播",
+      "short_name": "直播",
+      "url": "./众需生活-可交互演示.html#live-setup"
+    },
+    {
+      "name": "直接扫描",
+      "short_name": "扫一扫",
+      "url": "./众需生活-可交互演示.html#scan"
+    }
+  ]
+}

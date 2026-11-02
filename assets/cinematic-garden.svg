@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6c997"/><stop offset=".4" stop-color="#a8b69a"/><stop offset="1" stop-color="#29483f"/></linearGradient>
+    <radialGradient id="light"><stop offset="0" stop-color="#fff2c8" stop-opacity=".9"/><stop offset="1" stop-color="#fff2c8" stop-opacity="0"/></radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="leafBlur"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" seed="2"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .12"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="1440" height="960" fill="url(#sky)"/>
+  <circle cx="980" cy="240" r="320" fill="url(#light)" filter="url(#blur)"/>
+  <path d="M0 540c183-95 322-83 483 13 183 109 316 61 476-28 151-84 293-102 481-4v439H0Z" fill="#304f46"/>
+  <path d="M0 690c243-77 427-32 611 32 211 74 371-12 527-60 136-42 231-39 302-13v311H0Z" fill="#1d3b36"/>
+  <g stroke="#416a55" stroke-linecap="round" fill="none" opacity=".9">
+    <path d="M120 960c25-191 16-330-37-474" stroke-width="11"/><path d="M1280 960c-17-176-75-301-173-399" stroke-width="8"/>
+    <path d="M350 960c-2-138 25-239 80-335" stroke-width="7"/>
+  </g>
+  <g fill="#5e8466" filter="url(#leafBlur)" opacity=".9">
+    <ellipse cx="92" cy="485" rx="98" ry="27" transform="rotate(-31 92 485)"/><ellipse cx="220" cy="590" rx="86" ry="23" transform="rotate(27 220 590)"/>
+    <ellipse cx="1282" cy="520" rx="115" ry="31" transform="rotate(36 1282 520)"/><ellipse cx="1115" cy="420" rx="91" ry="26" transform="rotate(-28 1115 420)"/>
+    <ellipse cx="360" cy="620" rx="77" ry="23" transform="rotate(-17 360 620)"/>
+  </g>
+  <g fill="#e7d49d" opacity=".8">
+    <circle cx="230" cy="370" r="9"/><circle cx="337" cy="299" r="6"/><circle cx="1188" cy="345" r="8"/><circle cx="1331" cy="260" r="5"/><circle cx="1040" cy="392" r="6"/>
+  </g>
+  <rect width="1440" height="960" filter="url(#grain)" opacity=".76"/>
+</svg>

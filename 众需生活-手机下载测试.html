@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#183434" />
+  <title>众需生活 · 手机下载与测试</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <style>
+    :root { --ink:#1f3130; --paper:#f7f1e7; --terra:#d86243; --gold:#f2cf96; --sage:#68877a; --line:rgba(43,59,55,.13); }
+    * { box-sizing:border-box; }
+    html,body { margin:0; min-height:100%; }
+    body {
+      font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",sans-serif;
+      color:var(--ink);
+      background:
+        linear-gradient(150deg,rgba(18,37,36,.3),rgba(16,29,30,.82)),
+        url("./assets/people-life.jpg") center 35% / cover fixed no-repeat,
+        #142a29;
+      min-height:100dvh;
+      padding:max(24px,env(safe-area-inset-top)) 16px max(28px,env(safe-area-inset-bottom));
+    }
+    .shell { width:min(100%,520px);margin:0 auto; }
+    .brand { display:flex;align-items:center;gap:11px;color:white;margin:4px 2px 28px; }
+    .mark { width:46px;height:46px;border-radius:15px;background:rgba(255,253,247,.94);display:grid;place-items:center;color:#2a3d3a;font-family:"SimSun",serif;font-size:20px;line-height:1.05;text-align:center;box-shadow:0 10px 28px rgba(4,18,17,.22); }
+    .brand strong { display:block;font-family:"SimSun",serif;font-size:20px;letter-spacing:.12em; }
+    .brand span { display:block;font-size:8px;letter-spacing:.18em;color:rgba(255,255,255,.64);margin-top:4px; }
+    .hero { color:white;padding:8px 3px 23px; }
+    .eyebrow { color:var(--gold);font-size:9px;letter-spacing:.18em;font-weight:800; }
+    h1 { margin:11px 0 9px;font-family:"SimSun",serif;font-size:33px;line-height:1.24;letter-spacing:-.04em; }
+    .hero p { margin:0;max-width:390px;color:rgba(255,255,255,.72);font-size:11px;line-height:1.85; }
+    .phone-card { border-radius:26px;background:rgba(250,246,238,.96);padding:18px;box-shadow:0 28px 70px rgba(4,17,16,.34);backdrop-filter:blur(16px); }
+    .status { display:flex;align-items:center;gap:8px;padding:10px 11px;border-radius:13px;background:#eef1e9;color:#557262;font-size:9px;line-height:1.55; }
+    .status b { width:22px;height:22px;border-radius:7px;background:#dbe7dc;display:grid;place-items:center;flex:0 0 auto; }
+    .primary { display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;border:0;border-radius:15px;background:linear-gradient(135deg,#d86243,#ae432f);color:white;text-decoration:none;font-size:13px;font-weight:900;margin-top:13px;box-shadow:0 14px 30px rgba(174,67,47,.25); }
+    .secondary { display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:51px;border:1px solid var(--line);border-radius:14px;background:white;color:var(--ink);text-decoration:none;padding:0 13px;margin-top:9px;font-size:10px; }
+    .secondary span { color:#7d8a84;font-size:8px; }
+    .secondary b { color:var(--terra);font-size:16px; }
+    .address { margin-top:12px;padding:12px;border-radius:14px;background:#f2eadf; }
+    .address small { display:block;color:#7c776d;font-size:8px;margin-bottom:6px; }
+    .address code { display:block;color:#243d3b;font-size:10px;line-height:1.6;word-break:break-all;user-select:all; }
+    .copy { width:100%;min-height:42px;margin-top:8px;border:1px solid var(--line);border-radius:11px;background:white;color:#314d47;font-size:9px;font-weight:800; }
+    .steps { margin-top:12px;padding:14px;border-radius:16px;background:rgba(255,255,255,.72);border:1px solid var(--line); }
+    .steps h2 { margin:0 0 10px;font-size:13px; }
+    .step { display:flex;gap:9px;margin-top:9px;color:#4f625c;font-size:9px;line-height:1.65; }
+    .step i { width:21px;height:21px;border-radius:7px;background:#e0e9df;color:#4f705e;display:grid;place-items:center;font-style:normal;font-weight:900;flex:0 0 auto;font-size:8px; }
+    .note { color:#7b817c;font-size:8px;line-height:1.65;text-align:center;margin:17px 8px 0; }
+    .downloads { display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px; }
+    .downloads .secondary { margin-top:0;min-height:47px;font-size:9px; }
+    @media (min-width:720px) { body { padding-top:42px; } h1 { font-size:42px; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="brand">
+      <div class="mark">众需<br/>生活</div>
+      <div><strong>众需生活</strong><span>手机下载与测试</span></div>
+    </header>
+    <section class="hero">
+      <div class="eyebrow">PUT LIFE INTO MOTION</div>
+      <h1>把生活，<br/>装进手机里。</h1>
+      <p>同一套账号连接创作、活动、供需、旅行、直播与钱包。手机打开即可体验，也可以添加到桌面作为测试应用使用。</p>
+    </section>
+    <section class="phone-card">
+      <div class="status"><b>✓</b><span>本地服务已启动。手机和电脑连接同一个 Wi-Fi 后，可直接打开体验。</span></div>
+      <a class="primary" href="./众需生活-可交互演示.html?v=22">打开手机演示 →</a>
+      <button class="secondary" id="install-app" type="button"><span><b>＋</b> 添加到手机桌面</span><span>安装测试版</span></button>
+      <div class="downloads">
+        <a class="secondary" href="./众需生活-手机体验包.zip" download>下载手机体验包</a>
+        <a class="secondary" href="./众需生活-可交互演示.html?v=22">直接打开演示</a>
+      </div>
+      <button class="secondary" id="download-android-app" type="button" style="width:100%;margin-top:9px"><span><b>载</b> 下载安卓正式安装包</span><span>签名校验后开放</span></button>
+      <div class="address">
+        <small>手机访问地址</small>
+        <code id="phone-url">http://192.168.1.15:4174/众需生活-手机下载测试.html?v=22</code>
+        <button class="copy" id="copy-url" type="button">复制手机访问地址</button>
+      </div>
+      <section class="steps">
+        <h2>如何在手机上测试</h2>
+        <div class="step"><i>1</i><span>电脑与手机连接同一个 Wi-Fi，确保本地预览服务正在运行。</span></div>
+        <div class="step"><i>2</i><span>用手机浏览器打开上面的局域网地址，或把地址发送到微信文件传输助手。</span></div>
+        <div class="step"><i>3</i><span>点击“打开手机演示”，测试拍照、录像、活动、供需、直播和钱包。</span></div>
+        <div class="step"><i>4</i><span>在浏览器菜单中选择“添加到主屏幕”，即可像应用一样从桌面打开。</span></div>
+      </section>
+      <div class="note">正式上架微信小程序前，还需要真实 AppID、备案域名、微信支付商户号、地图 Key、短信模板和服务类目资质。</div>
+    </section>
+  </main>
+  <script>
+    let installPrompt = null;
+    const installButton = document.getElementById("install-app");
+    window.addEventListener("beforeinstallprompt", (event) => {
+      event.preventDefault();
+      installPrompt = event;
+      installButton.lastElementChild.textContent = "点击安装测试版";
+    });
+    installButton.addEventListener("click", async () => {
+      if (installPrompt) {
+        installPrompt.prompt();
+        await installPrompt.userChoice;
+        installPrompt = null;
+        return;
+      }
+      alert("请使用手机浏览器菜单中的“添加到主屏幕”，iPhone 建议使用 Safari。");
+    });
+    document.getElementById("copy-url").addEventListener("click", async () => {
+      const text = document.getElementById("phone-url").textContent;
+      try {
+        await navigator.clipboard.writeText(text);
+        document.getElementById("copy-url").textContent = "地址已复制";
+      } catch {
+        document.getElementById("copy-url").textContent = "请长按上面的地址复制";
+      }
+    });
+    document.getElementById("download-android-app").addEventListener("click", async () => {
+      const apkUrl = "./downloads/zhongxu-life.apk";
+      try {
+        const response = await fetch(apkUrl, { method: "HEAD", cache: "no-store" });
+        if (response.ok) {
+          window.location.href = apkUrl;
+          return;
+        }
+      } catch {}
+      alert("正式安卓安装包尚未完成签名构建。现在可先打开演示并添加到主屏幕测试，或下载手机体验包。");
+    });
+  </script>
+</body>
+</html>

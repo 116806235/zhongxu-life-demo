@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1c25"/>
+      <stop offset=".52" stop-color="#25474d"/>
+      <stop offset="1" stop-color="#bd7657"/>
+    </linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#ffd59a" stop-opacity=".8"/><stop offset="1" stop-color="#ffd59a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="street" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#172d31"/><stop offset=".5" stop-color="#4b5854"/><stop offset="1" stop-color="#16262c"/></linearGradient>
+    <filter id="bokeh"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" seed="11"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .13"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="1440" height="960" fill="url(#night)"/>
+  <circle cx="1070" cy="220" r="260" fill="url(#glow)" opacity=".7"/>
+  <path d="M0 470h420v-120h180v160h142V310h190v230h163V388h345v572H0Z" fill="#12272d" opacity=".9"/>
+  <path d="M0 656 1440 480v480H0Z" fill="url(#street)"/>
+  <path d="M0 740 1440 566M0 850 1440 680" stroke="#f4d29a" stroke-opacity=".3" stroke-width="4"/>
+  <g filter="url(#bokeh)">
+    <circle cx="130" cy="520" r="13" fill="#f4c682"/><circle cx="264" cy="474" r="8" fill="#f3aa72"/><circle cx="430" cy="540" r="16" fill="#c6dcb7"/>
+    <circle cx="930" cy="424" r="12" fill="#f0bd7e"/><circle cx="1155" cy="500" r="17" fill="#d8aa74"/><circle cx="1300" cy="448" r="10" fill="#b7d7c9"/>
+  </g>
+  <g fill="#08191e">
+    <path d="M260 960c43-163 102-246 166-246s124 83 168 246Z"/>
+    <circle cx="426" cy="666" r="42"/><path d="M366 655c8-58 33-85 66-85 39 0 59 31 57 89-24-18-38-37-45-55-22 19-48 34-78 51Z"/>
+    <path d="M1020 960c34-143 84-220 145-220 59 0 110 75 148 220Z"/><circle cx="1165" cy="692" r="38"/>
+  </g>
+  <rect width="1440" height="960" filter="url(#grain)" opacity=".8"/>
+</svg>
