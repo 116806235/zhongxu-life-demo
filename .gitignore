@@ -1,4 +1,5 @@
 *.zip
+!众需生活-手机体验包.zip
 node_modules/
 .DS_Store
 Thumbs.db
