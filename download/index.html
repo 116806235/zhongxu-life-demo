@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#17362f" />
+  <meta name="app-version" content="3.6.69" />
+  <title>众需生活 3.6.69 · 长期下载页</title>
+  <style>
+    :root {
+      --ink: #26332f;
+      --green: #31503e;
+      --green-dark: #1d392d;
+      --orange: #c66e3d;
+      --paper: #f8f2e7;
+      --line: rgba(67, 55, 42, 0.12);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(218, 151, 86, 0.24), transparent 30%),
+        linear-gradient(180deg, #faf5eb 0%, #eee3d3 100%);
+      font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+      padding: max(22px, env(safe-area-inset-top)) 18px max(30px, env(safe-area-inset-bottom));
+    }
+    .shell { width: min(100%, 560px); margin: 0 auto; }
+    .brand { display: flex; align-items: center; gap: 13px; margin: 4px 2px 26px; }
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      color: #fffaf0;
+      background: linear-gradient(145deg, #456b55, #254333);
+      border-radius: 17px;
+      font-family: "SimSun", serif;
+      font-size: 24px;
+      font-weight: 800;
+      box-shadow: 0 12px 28px rgba(37, 67, 51, 0.22);
+    }
+    .brand strong { display: block; font-family: "SimSun", serif; font-size: 24px; letter-spacing: 0.12em; }
+    .brand span { display: block; margin-top: 5px; color: #8b7865; font-size: 11px; }
+    .hero {
+      overflow: hidden;
+      position: relative;
+      padding: 30px;
+      color: #fffaf0;
+      background: linear-gradient(145deg, #31503e, #1c382b);
+      border-radius: 28px;
+      box-shadow: 0 24px 60px rgba(32, 58, 45, 0.22);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -110px;
+      width: 250px;
+      height: 250px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+    }
+    .eyebrow { color: #e8b47e; font-size: 10px; font-weight: 800; letter-spacing: 0.18em; }
+    h1 { margin: 13px 0 10px; font-family: "SimSun", serif; font-size: 38px; line-height: 1.25; }
+    .hero p { margin: 0; color: rgba(255, 250, 240, 0.72); font-size: 13px; line-height: 1.8; }
+    .version {
+      display: inline-flex;
+      margin-top: 20px;
+      padding: 8px 13px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .card {
+      margin-top: 17px;
+      padding: 22px;
+      background: rgba(255, 253, 247, 0.96);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 15px 38px rgba(75, 53, 27, 0.08);
+    }
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 54px;
+      border-radius: 16px;
+      color: white;
+      background: linear-gradient(135deg, #d17c42, #b65a30);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 14px 30px rgba(182, 90, 48, 0.22);
+    }
+    .button.secondary {
+      margin-top: 10px;
+      color: var(--green);
+      background: #edf3ed;
+      border: 1px solid rgba(49, 80, 62, 0.12);
+      box-shadow: none;
+    }
+    .warning {
+      margin-top: 12px;
+      padding: 14px;
+      color: #79634e;
+      background: #f5eadb;
+      border-radius: 14px;
+      font-size: 11px;
+      line-height: 1.7;
+    }
+    .title { color: #342d26; font-size: 18px; font-weight: 800; }
+    .step { display: flex; gap: 11px; margin-top: 14px; color: #65584c; font-size: 12px; line-height: 1.7; }
+    .step i {
+      display: grid;
+      flex: 0 0 24px;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      color: #fff;
+      background: var(--green);
+      border-radius: 8px;
+      font-style: normal;
+      font-size: 10px;
+      font-weight: 800;
+    }
+    .meta {
+      margin-top: 14px;
+      padding: 14px;
+      background: #f5ede2;
+      border-radius: 14px;
+      color: #786858;
+      font-size: 10px;
+      line-height: 1.7;
+      word-break: break-all;
+    }
+    .footer { margin: 20px 8px 0; color: #8b7b6c; font-size: 10px; line-height: 1.8; text-align: center; }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="brand">
+      <div class="mark">众</div>
+      <div><strong>众需生活</strong><span>长期下载入口 · 不换码更新</span></div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">ZHONGXU LIFE · MOBILE APP</div>
+      <h1>把真实的需要，<br />装进手机里。</h1>
+      <p>适合安卓手机安装，也可以直接在线体验。这个地址将长期保留，后续更新安装包不需要重新制作二维码。</p>
+      <div class="version">当前版本 3.6.69 · 体验版</div>
+    </section>
+
+    <section class="card">
+      <a class="button" href="./zhongxu-life-latest.apk" download>下载安卓安装包 3.6.69</a>
+      <a class="button secondary" href="../众需生活-3.6.69-在线演示.html">先打开在线体验</a>
+      <div class="warning">
+        微信内可能限制 APK 下载。如果点击没有反应，请点右上角“···”，选择“在浏览器打开”后再下载。
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="title">安装步骤</div>
+      <div class="step"><i>1</i><span>使用安卓手机打开本页，并点“下载安卓安装包”。</span></div>
+      <div class="step"><i>2</i><span>浏览器提示下载 APK 后，选择下载并允许安装未知来源应用。</span></div>
+      <div class="step"><i>3</i><span>安装时核对应用名称“众需生活”和下方证书指纹。</span></div>
+      <div class="step"><i>4</i><span>苹果手机不能直接安装 APK，可先打开在线体验并添加到主屏幕。</span></div>
+      <div class="meta">
+        包名：com.zhongxu.life<br />
+        版本：3.6.69（369）<br />
+        文件：zhongxu-life-latest.apk<br />
+        SHA-256：8AFFD854E5CC019E0D907E228AAB6DADBC5B924D58E1AB4746D8227B75C6FCFF
+      </div>
+    </section>
+
+    <div class="footer">
+      本安装包为众需生活体验版，当前不包含真实支付、真实资金结算和正式生产数据。<br />
+      请勿从非官方页面下载或向任何人提供支付密码、短信验证码。
+    </div>
+  </main>
+</body>
+</html>
