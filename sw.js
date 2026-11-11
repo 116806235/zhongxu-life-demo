@@ -1,5 +1,6 @@
-const CACHE_NAME = "zhongxu-life-v24";
+const CACHE_NAME = "zhongxu-life-v25";
 const APP_SHELL = [
+  "./众需生活-3.6.73-在线演示.html",
   "./众需生活-3.6.72-在线演示.html",
   "./众需生活-3.6.69-在线演示.html",
   "./众需生活-可交互演示.html",
@@ -53,7 +54,7 @@ self.addEventListener("fetch", (event) => {
           }
           return response;
         })
-        .catch(() => caches.match("./众需生活-3.6.72-在线演示.html"));
+        .catch(() => caches.match("./众需生活-3.6.73-在线演示.html"));
     }),
   );
 });
