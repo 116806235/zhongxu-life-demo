@@ -1,5 +1,6 @@
-const CACHE_NAME = "zhongxu-life-v30";
+const CACHE_NAME = "zhongxu-life-v31";
 const APP_SHELL = [
+  "./众需生活-3.6.81-小程序同源在线版.html",
   "./众需生活-3.6.80-小程序同源在线版.html",
   "./众需生活-3.6.76-在线演示.html",
   "./众需生活-3.6.75-在线演示.html",
@@ -58,7 +59,7 @@ self.addEventListener("fetch", (event) => {
           }
           return response;
         })
-        .catch(() => caches.match("./众需生活-3.6.80-小程序同源在线版.html"));
+        .catch(() => caches.match("./众需生活-3.6.81-小程序同源在线版.html"));
     }),
   );
 });
