@@ -102,6 +102,35 @@
       border: 1px solid rgba(49, 80, 62, 0.12);
       box-shadow: none;
     }
+    .button.ios {
+      margin-top: 10px;
+      color: #2d5546;
+      background: #e9f1e8;
+      border: 1px solid rgba(49, 80, 62, 0.16);
+      box-shadow: none;
+    }
+    .address-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      margin-top: 10px;
+    }
+    .copy-button {
+      min-height: 48px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      color: var(--green);
+      background: #fffaf1;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .ios-note {
+      margin-top: 10px;
+      color: #6f6254;
+      font-size: 11px;
+      line-height: 1.7;
+    }
     .warning {
       margin-top: 12px;
       padding: 14px;
@@ -155,10 +184,16 @@
 
     <section class="card">
       <a class="button" href="./zhongxu-life-latest.apk?v=377" download>下载安卓安装包 3.6.77</a>
-      <a class="button secondary" href="../众需生活-3.6.76-在线演示.html">先打开在线体验</a>
-      <div class="warning">
-        微信内可能限制 APK 下载。如果点击没有反应，请点右上角“···”，选择“在浏览器打开”后再下载。
+      <div class="address-grid">
+        <button class="copy-button" type="button" data-copy-android>复制安卓下载地址</button>
+        <button class="copy-button" type="button" data-copy-ios>复制苹果体验地址</button>
       </div>
+      <a class="button ios" href="../众需生活-3.6.77-在线演示.html">苹果手机打开体验版</a>
+      <a class="button secondary" href="../众需生活-3.6.77-在线演示.html">先打开在线体验</a>
+      <div class="warning">
+        微信内可能限制 APK 下载。如果点击没有反应，请复制上方安卓地址，再粘贴到手机浏览器打开。
+      </div>
+      <div class="ios-note">苹果 App Store 正式版尚未上架。iPhone 用户请复制苹果体验地址，在 Safari 打开后选择“分享 → 添加到主屏幕”。这不是 App Store 安装包。</div>
     </section>
 
     <section class="card">
@@ -166,7 +201,7 @@
       <div class="step"><i>1</i><span>使用安卓手机打开本页，并点“下载安卓安装包”。</span></div>
       <div class="step"><i>2</i><span>浏览器提示下载 APK 后，选择下载并允许安装未知来源应用。</span></div>
       <div class="step"><i>3</i><span>安装时核对应用名称“众需生活”和下方证书指纹。</span></div>
-      <div class="step"><i>4</i><span>苹果手机不能直接安装 APK，可先打开在线体验并添加到主屏幕。</span></div>
+      <div class="step"><i>4</i><span>苹果手机不能安装 APK。请复制苹果体验地址，在 Safari 中添加到主屏幕。</span></div>
       <div class="meta">
         包名：com.zhongxu.life<br />
         版本：3.6.77（377）<br />
@@ -180,5 +215,40 @@
       请勿从非官方页面下载或向任何人提供支付密码、短信验证码。
     </div>
   </main>
+  <script>
+    (function () {
+      function copyText(text, success) {
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(success).catch(function () {});
+          return;
+        }
+        var input = document.createElement("textarea");
+        input.value = text;
+        input.setAttribute("readonly", "readonly");
+        input.style.position = "fixed";
+        input.style.opacity = "0";
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand("copy");
+        document.body.removeChild(input);
+        success();
+      }
+      function toast(text) {
+        var box = document.createElement("div");
+        box.textContent = text;
+        box.style.cssText = "position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:99;padding:12px 18px;border-radius:12px;color:#fff;background:#203b33;font-size:14px;box-shadow:0 10px 28px rgba(0,0,0,.2)";
+        document.body.appendChild(box);
+        setTimeout(function () { box.remove(); }, 2200);
+      }
+      var android = new URL("./zhongxu-life-latest.apk?v=377", location.href).href;
+      var ios = new URL("../众需生活-3.6.77-在线演示.html", location.href).href;
+      document.querySelector("[data-copy-android]").addEventListener("click", function () {
+        copyText(android, function () { toast("安卓下载地址已复制"); });
+      });
+      document.querySelector("[data-copy-ios]").addEventListener("click", function () {
+        copyText(ios, function () { toast("苹果体验地址已复制"); });
+      });
+    })();
+  </script>
 </body>
 </html>
