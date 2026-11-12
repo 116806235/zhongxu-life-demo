@@ -1,4 +1,4 @@
-const CACHE_NAME = "zhongxu-life-v29";
+const CACHE_NAME = "zhongxu-life-v30";
 const APP_SHELL = [
   "./众需生活-3.6.80-小程序同源在线版.html",
   "./众需生活-3.6.76-在线演示.html",
